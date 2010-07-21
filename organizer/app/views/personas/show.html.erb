@@ -1,0 +1,23 @@
+<p>
+  <b>Full name:</b>
+  <%=h @persona.full_name %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%=h @persona.age %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @persona.email %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%=h @persona.active %>
+</p>
+
+
+<%= link_to 'Edit', edit_persona_path(@persona) %> |
+<%= link_to 'Back', personas_path %>
