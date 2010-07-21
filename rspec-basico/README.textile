@@ -1,0 +1,8 @@
+h1. Rspec
+
+h3. Instalación
+
+<code>
+  $ gem install rspec
+</code>
+
