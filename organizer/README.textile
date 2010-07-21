@@ -1,0 +1,44 @@
+h1. Rspec en Rails
+
+h3. Setup
+
+En el archivo environment/test.rb agregamos la siguiente linea:
+
+<code>
+  config.gem 'rspec-rails', :lib => 'spec/rails'
+</code>
+
+Luego, tenemos que instalar las gemas para el environment de test, ejecutando:
+
+<code>
+  $ RAILS_ENV=test rake gems:install
+</code>
+
+Con esto, solo nos queda instalar el soporte para Rspec dentro de nuestra aplicacion
+Rails, ejecutando:
+
+<code>
+  $ ruby script/generate rspec
+</code>
+
+h3. Ejecutando Rspec
+
+Hay dos formas de hacer correr los tests, la primera:
+
+<code>
+  $ rake spec
+</code>
+
+O también podemos hacerlo utilizando directamente la gema:
+
+<code>
+  $ spec -cfn spec/
+</code>
+
+Cuando se utiliza esta última forma, siempre es recomendable preparar la DB para
+el environment de test, ejecutando:
+
+<code>
+  $ rake db:test:prepare
+</code>
+
