@@ -72,5 +72,10 @@ describe Persona do
       @persona.should_not be_mayor_de_edad
     end
   end
+
+  context 'Integracion Facebook' do
+    it "debería conectarse via Facebook"
+    it "debería poder obtener sus amigos en Facebook"
+  end
 end
 
