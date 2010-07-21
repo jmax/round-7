@@ -6,3 +6,11 @@ h3. Instalación
   $ gem install rspec
 </code>
 
+h3. Ejecución
+
+Para probar el ejemplo, simplemente hay que ejecutar:
+
+<code>
+  $ spec -cfn persona_spec.rb
+</code>
+
