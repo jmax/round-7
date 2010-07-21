@@ -1,0 +1,12 @@
+h1. Curso de Ruby on Rails
+
+h2. Round #7: Conceptos básicos de Rspec: Testeando nuestro código
+
+h3. Dependencias
+
+Para que funcionen los ejemplos, deberas instalar la gema de rspec, con
+
+<code>
+  $ gem install rspec --version='1.3.0'
+</code>
+
